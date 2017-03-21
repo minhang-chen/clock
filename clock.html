@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>时钟</title>
+	<link rel="stylesheet" type="text/css" href="clock.css">
+	
+</head>
+<body>
+	<div class="m-clock">
+		<span class='hour'></span>
+		<span class='minute'></span>
+		<span class='second'></span>
+		<span class='round'></span>
+	</div>
+	<div>
+		<span>闹钟：</span>
+		<input class='alarm-clock-hour' type="text" name="">：
+		<input class='alarm-clock-minute' type="text" name="">：
+		<input type="button" value="确定" class='btn-clock'>
+	</div>
+
+	<script type="text/javascript" src="clock.js"></script>
+	<script type="text/javascript">
+	window.onload = function(){
+		var clock = new Clock();
+		clock.active();
+	}
+		
+	</script>
+</body>
+</html>
